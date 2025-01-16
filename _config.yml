@@ -4,45 +4,10 @@ title                    : "Alexander Fuson"
 title_separator          : "-"
 name                     : &name "Alexander Fuson"
 
-author:
-  # Biographic information
-  avatar           : "profile.png"
-  name             : "Alexander Fuson"
-  pronouns         : # example: "she/her"  
-  bio              : "Visual Artist"
-  location         : "Colorado Springs"
-  employer         : "None"
-  uri              : # URL
-  email            : "xanderfuson@gmail.com"  
-
-  # Social media
-  bluesky          : "bsky.app" # Replace this with you Bluesky username
-  facebook         : # Username
-  flickr           : # Username
-  foursquare       : # Username
-  goodreads        : # Username
-  google_plus      : # Username
-  keybase          : # Username
-  instagram        : # Username
-  lastfm           : # Username
-  linkedin         : # Username
-  mastodon         : # URL
-  medium           : # URL
-  pinterest        : # Username
-  soundcloud       : # Username
-  steam            : # Username
-  telegram         : # URL
-  tumblr           : # Username
-  twitter          : # Username for X / Twitter
-  vine             : # Username
-  weibo            : # Username
-  wikipedia        : # Username
-  xing             : # Username
-  youtube          : # Username
-  zhihu            : # Username
 #Logo: 
 #discription: text below image
-#show_downloads: ture
-#remote_theme: pages-themes/minimal@v0.2.0
-#plugins:
-#- jekyll-remote-theme # add this line to the plugins list if you already have one
+show_downloads: ture
+remote_theme: pages-themes/minimal@v0.2.0
+plugins:
+- jekyll-remote-theme # add this line to the plugins list if you already have one
+
