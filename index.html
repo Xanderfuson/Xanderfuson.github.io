@@ -7,6 +7,45 @@
   <title>Portfolio</title>
   <link rel="stylesheet" href="styles/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #fff; /* Ensure a contrasting background */
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .navbar ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .navbar ul li {
+      margin: 0 10px;
+    }
+    .navbar ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      transition: color 0.3s;
+    }
+    .navbar ul li a:hover {
+      color: #007bff;
+    }
+    .contact-details {
+      line-height: 1.8;
+    }
+    .contact-details a {
+      text-decoration: none;
+      color: #007bff;
+    }
+    .contact-details a:hover {
+      text-decoration: underline;
+    }
+  </style>
 </head>
 <body>
   <header class="hero">
@@ -30,7 +69,7 @@
     <div class="container">
       <h2>About Me</h2>
       <p>
-        I'm a Visial Artists/Photographer and I'm passionate about building and designing impactful projects. 
+        I'm a Visual Artist/Photographer and I'm passionate about building and designing impactful projects. 
         I have experience in Interior Design, Sight surveying, and Photography.
       </p>
     </div>
@@ -59,17 +98,17 @@
   <section id="contact" class="section contact">
     <div class="container">
       <h2>Contact Me</h2>
-      <form id="https://formspree.io/f/xyzkybpl">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="btn">Send Message</button>
-      </form>
+      <div class="contact-details">
+        <p>Email: <a href="mailto:xanderfuson@gmail.com">xanderfuson@gmail.com</a></p>
+        <p>Phone: <a href="tel:+12528855956">(252)885-5956</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/xander-fuson-23500b2b3/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_verification_details%3BdJRFFRDCTHiq46wSVrniNw%3D%3D" target="_blank">Xander Fuson</a></p>
+        <p>Instagram: <a href="https://instagram.com/xanderf_photography" target="_blank">@xanderf_photography</a></p>
+      </div>
     </div>
   </section>
 
   <footer class="footer">
-    <p>© 2025 [Your Name]. All rights reserved.</p>
+    <p>© 2025 Alexander Fuson. All rights reserved.</p>
   </footer>
 
   <script src="scripts/script.js"></script>
