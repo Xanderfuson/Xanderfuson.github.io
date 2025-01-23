@@ -1,1 +1,143 @@
-
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: linear-gradient(to right, #6a11cb, #2575fc);
+    color: #fff;
+    text-align: center;
+    padding: 100px 15px;
+  }
+  .hero h1 {
+    font-size: 3rem;
+    margin-bottom: 15px;
+  }
+  .hero p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  .hero .btn {
+    background: #fff;
+    color: #2575fc;
+    padding: 10px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background: #f8f9fa;
+    padding: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  .navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  .navbar li {
+    margin: 0 15px;
+  }
+  .navbar a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+  }
+  
+  /* Section Styles */
+  .section {
+    padding: 60px 15px;
+    text-align: center;
+  }
+  .section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  .section p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Projects */
+  .project-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .project-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  .project-card img {
+    width: 100%;
+  }
+  .project-card h3 {
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+  .project-card p {
+    padding: 0 15px 15px;
+    font-size: 0.9rem;
+  }
+  .project-card .btn {
+    display: block;
+    background: #2575fc;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  /* Contact Form */
+  .contact form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .contact input, .contact textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  .contact button {
+    background: #2575fc;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  /* Footer */
+  .footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: 30px;
+  }
+  
