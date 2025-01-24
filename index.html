@@ -5,26 +5,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Modern Portfolio Website">
     <title>Portfolio</title>
-    
-    <!-- Preload Critical Assets -->
-    <link rel="preload" href="styles/style.css" as="style">
-    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" as="font" type="font/woff2" crossorigin="anonymous">
-    
-    <!-- Minified CSS -->
-    <link rel="stylesheet" href="styles/style.min.css">
-    
-    <!-- Critical CSS -->
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
-      body {
+      .navbar {
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        background: #fff; /* Ensure a contrasting background */
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+      .navbar ul {
+        display: flex;
+        list-style: none;
+        padding: 0;
         margin: 0;
-        font-family: 'Roboto', sans-serif;
+        justify-content: space-around;
+        align-items: center;
       }
-      .hero {
-        background: #f9f9f9;
-        padding: 50px 20px;
-        text-align: center;
+      .navbar ul li {
+        margin: 0 10px;
       }
-      /* Add above-the-fold critical styles */
+      .navbar ul li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: 500;
+        transition: color 0.3s;
+      }
+      .navbar ul li a:hover {
+        color: #007bff;
+      }
+      .contact-details {
+        line-height: 1.8;
+      }
+      .contact-details a {
+        text-decoration: none;
+        color: #007bff;
+      }
+      .contact-details a:hover {
+        text-decoration: underline;
+      }
     </style>
   </head>
   
