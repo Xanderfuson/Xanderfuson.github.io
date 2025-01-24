@@ -18,7 +18,7 @@ body {
 
 /* Hero Section */
 .hero {
-  background: linear-gradient(to right, #1a237e, #0d47a1);
+  background: #1c1c1c; /* Dark gray header */
   color: #fff;
   text-align: center;
   padding: 100px 15px;
@@ -34,25 +34,25 @@ body {
   color: #cfd8dc;
 }
 .hero .btn {
-  background: #0d47a1;
+  background: #333; /* Subtle dark button */
   color: #fff;
   padding: 10px 25px;
   border-radius: 5px;
   text-decoration: none;
   font-weight: bold;
-  border: 2px solid #1e88e5;
+  border: 2px solid #555; /* Gray border */
   transition: background 0.3s, color 0.3s;
 }
 .hero .btn:hover {
-  background: #1e88e5;
+  background: #555; /* Slightly brighter gray on hover */
   color: #121212;
 }
 
 /* Navbar */
 .navbar {
-  background: #121212; /* Darker tone */
+  background: #1a1a1a; /* Darker gray */
   padding: 15px 0;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Stronger shadow for depth */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Strong shadow for depth */
   border-bottom: 1px solid #333; /* Subtle divider */
 }
 .navbar ul {
@@ -65,12 +65,12 @@ body {
 }
 .navbar a {
   text-decoration: none;
-  color: #e0e0e0;
+  color: #e0e0e0; /* Light gray for links */
   font-weight: bold;
   transition: color 0.3s;
 }
 .navbar a:hover {
-  color: #1e88e5;
+  color: #1e88e5; /* Accent blue on hover */
 }
 
 /* Section Styles */
