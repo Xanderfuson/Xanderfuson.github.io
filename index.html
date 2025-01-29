@@ -1,13 +1,19 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Modern Portfolio Website">
     <title>Portfolio</title>
+    
+    <!-- Preload Critical Assets -->
+    <link rel="preload" href="styles/style.css" as="style">
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" as="font" type="font/woff2" crossorigin="anonymous">
+    
+    <!-- Minified CSS -->
+    <link rel="stylesheet" href="styles/style.min.css">
+    
+    <!-- Critical CSS -->
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
     <style>
+      body {
       .navbar {
         position: sticky;
         top: 0;
@@ -20,6 +26,7 @@
         list-style: none;
         padding: 0;
         margin: 0;
+        font-family: 'Roboto', sans-serif;
         justify-content: space-around;
         align-items: center;
       }
@@ -42,108 +49,13 @@
         text-decoration: none;
         color: #007bff;
       }
+      .hero {
+        background: #f9f9f9;
+        padding: 50px 20px;
+        text-align: center;
       .contact-details a:hover {
         text-decoration: underline;
       }
+      /* Add above-the-fold critical styles */
     </style>
   </head>
-  
-<body>
-<header class="hero">
-    <div class="container">
-        <img src="assets/images/edit-11.webp" alt="Portfolio Header Image" class="header-img">
-        <h1>Hi, I'm Alexander Fuson</h1>
-        <p>Welcome to my portfolio.</p>
-        <a href="#projects" class="btn">Explore Projects</a>
-    </div>
-</header>
-
-  <nav class="navbar">
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#photography">Photography</a></li> <!-- Added Photography Link -->
-      <li><a href="#contact">Contact</a></li>
-      <li><a href="assets/assets/downloads/Alexander Fuson Resume 7-23-23.pdf" download>Resume</a></li>
-    </ul>
-  </nav>
-
-  <section id="about" class="section about">
-    <div class="container">
-      <h2>About Me</h2>
-      <p>
-        I'm a Visual Artist/Photographer and I'm passionate about building and designing impactful projects. 
-        I have experience in Interior Design, Sight surveying, and Photography.
-      </p>
-    </div>
-  </section>
-
-  <section id="projects" class="section projects">
-    <div class="container">
-      <h2>My Projects</h2>
-      <div class="project-grid">
-        <div class="project-card">
-          <img src="assets/images/placeholder.png" alt="Project 1">
-          <h3>Project Title 1</h3>
-          <p>Brief description of the project.</p>
-          <a href="#" class="btn">View Details</a>
-        </div>
-        <div class="project-card">
-          <img src="assets/images/placeholder.png" alt="Project 2">
-          <h3>Project Title 2</h3>
-          <p>Brief description of the project.</p>
-          <a href="#" class="btn">View Details</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- New Photography Section -->
-  <section id="photography" class="section photography">
-  <div class="container">
-    <h2>Photography</h2>
-    <div class="gallery-grid">
-      <div class="gallery-item">
-        <img src="/assets/images/edit-11.webp" alt="Photography 1">
-      </div>
-      <div class="gallery-item">
-        <img src="assets/images/edit-12.webp" alt="Photography 2">
-      </div>
-      <div class="gallery-item">
-        <img src="assets/images/edit-13.webp" alt="Photography 3">
-      </div>
-      <div class="gallery-item">
-        <img src="assets/images/edit-14.webp" alt="Photography 4">
-      </div>
-      <div class="gallery-item">
-        <img src="assets/images/edit-15.webp" alt="Photography 5">
-      </div>
-    </div>
-  </div>
-
-  <!-- Lightbox -->
-  <div id="lightbox" class="lightbox">
-    <span class="close">&times;</span>
-    <img class="lightbox-content" src="" alt="Enlarged image">
-  </div>
-</section>
-
-  <section id="contact" class="section contact">
-    <div class="container">
-      <h2>Contact Me</h2>
-      <div class="contact-details">
-        <p>Email: <a href="mailto:xanderfuson@gmail.com">xanderfuson@gmail.com</a></p>
-        <p>Phone: <a href="tel:+12528855956">(252)885-5956</a></p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/xander-fuson-23500b2b3/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_verification_details%3BdJRFFRDCTHiq46wSVrniNw%3D%3D" target="_blank">Xander Fuson</a></p>
-        <p>Instagram: <a href="https://instagram.com/xanderf_photography" target="_blank">@xanderf_photography</a></p>
-      </div>
-    </div>
-  </section>
-
-  <footer class="footer">
-    <p>© 2025 Alexander Fuson. All rights reserved.</p>
-  </footer>
-
- <script src="scripts/script.js"></script>
-</body>
-</html>
